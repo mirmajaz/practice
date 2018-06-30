@@ -1,0 +1,39 @@
+<ion-header>
+
+  </ion-header>
+          <!-- <ion-content class="content" padding>
+        <ion-list>
+                    
+                    <ion-item class="username">
+                      <ion-label floating>Username</ion-label>
+                      <ion-input type="tel" maxlength = "4" value="" ></ion-input>
+                    </ion-item>
+              
+                    <ion-item class="username">
+                      <ion-label floating>Password</ion-label>
+                      <ion-input type="password" maxlength = "8" value="" ></ion-input>
+                    </ion-item>
+              
+                  </ion-list>
+              
+                  <div >
+                    <button ion-button color="primary" block full (click) = "signIn(usernaame)">Sign In</button>
+                  </div>         
+                  
+                  
+    </ion-content> -->
+    <div class="container" id="lgBox">
+        <form class="form-group" #lgForm="ngForm" (ngSubmit)="loginSubmit(lgForm.value)">
+          <div class="loginRow"><h4 class="text-center">Login</h4></div>
+          <div class="loginRow"><input type="text" #username name="username" ngModel class="form-control" placeholder="Username" required /></div>
+          <div class="loginRow"><input type="password" #password name="password" ngModel class="form-control" placeholder="Password" required  /></div>
+          <div class="loginRow"><button class="btn btn-primary btn-block/">Login</button></div>
+        </form>
+        <div *ngIf="users">
+          <ng-container *ngFor="let user of users">
+            <ion-label>{{user.username}}</ion-label>
+          </ng-container>
+
+        </div>
+
+      </div>

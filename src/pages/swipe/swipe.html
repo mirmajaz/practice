@@ -1,0 +1,11 @@
+<ion-tabs>
+    <ion-tabs (ionChange)="transition($event)"></ion-tabs>
+    <ion-tab [root]="tab1Root" tabTitle="Tab1" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="Tab2" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Tab3" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
+<!-- <super-tabs height="100%">
+        <super-tab [tabRoot]="tab1Root" title="Home"></super-tab>
+        <super-tab [tabRoot]="tab2Root" title="About"></super-tab>
+        <super-tab [tabRoot]="tab3Root" title="Contact"></super-tab>
+      </super-tabs> -->
