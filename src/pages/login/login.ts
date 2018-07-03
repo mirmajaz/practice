@@ -19,7 +19,7 @@ constructor(public menu :MenuController,public navCtrl: NavController, public re
     console.log("in login",this.users=this.reddit.getLocalData());
   
     this.users = [
-      {"username":"usr1"  ,      "password":"a12312"},
+      {"username":"usr1"  ,      "password":"a123122"},
       {"username":"usr2"  ,      "password":"a123"},
       {"username":"usr3"  ,      "password":"a123"},
       {"username":"usr4"  ,      "password":"a123"},
